@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './App.css';
+import "./App.css";
 
 function App() {
   const [muscle, setMuscle] = useState("");
@@ -8,7 +8,6 @@ function App() {
   const [exercises, setExercises] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [showResults, setShowResults] = useState(false);
 
   // Define predefined options for muscle and difficulty
   const muscleOptions = [
@@ -51,10 +50,19 @@ function App() {
 
       setExercises(response.data);
       setLoading(false);
-      setShowResults(true);
     } catch (err) {
       setLoading(false);
       setError("An error occurred while fetching exercises.");
+    }
+  };
+
+  const [expandedExerciseId, setExpandedExerciseId] = useState(null);
+
+  const toggleInstructions = (exerciseId) => {
+    if (expandedExerciseId === exerciseId) {
+      setExpandedExerciseId(null); 
+    } else {
+      setExpandedExerciseId(exerciseId); 
     }
   };
 
@@ -94,14 +102,26 @@ function App() {
       <div className="button-container">
         <button onClick={fetchExercises}>Find Exercises</button>
       </div>
-      {showResults && (
+      {loading && <p>Loading...</p>}
+      {error && <p>{error}</p>}
+      {exercises.length > 0 && (
         <div className="results">
-          {loading && <p>Loading...</p>}
-          {error && <p>{error}</p>}
           <h2>Exercise Options</h2>
           <ol>
             {exercises.map((exercise) => (
-              <li key={exercise.id}>{exercise.name}</li>
+              <li key={exercise.id}>
+                {exercise.name}{" "}
+                <button onClick={() => toggleInstructions(exercise.id)}>
+                  {expandedExerciseId === exercise.id
+                    ? "Hide Instructions"
+                    : "Instructions"}
+                </button>
+                {expandedExerciseId === exercise.id && (
+                  <div className="instructions">
+                    <strong>Instructions:</strong> {exercise.instructions}
+                  </div>
+                )}
+              </li>
             ))}
           </ol>
         </div>

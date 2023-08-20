@@ -2,21 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url('./assets/gym3.jpg');
+  background-image: url('./assets/gym5.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: flex-end; /* Center the content horizontally */
-  min-height: 100vh; /* Ensure the body takes up the full viewport height */
-  margin-right: 20%;
-  margin-top: 5%;
+  justify-content: center; 
+  min-height: 100vh; 
+  margin-top: 10%;
 }
 
 .app-container {
   display: flex;
   flex-direction: column; /* Stack child elements vertically */
   align-items: center; /* Center child elements horizontally */
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 20px; /* Increase padding for better spacing */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
@@ -34,7 +33,7 @@ select {
   margin-left: 2px;
 }
 
-button {
+.button-container button {
   padding: 8px;
   background-color: #007bff;
   color: white;
@@ -44,9 +43,22 @@ button {
   cursor: pointer;
 }
 
+.results button {
+  padding: 5px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
 .button-container {
   margin: 10px 0; /* Add spacing only at the top and bottom */
   padding: 10px;
+}
+
+.results .instructions {
+  font-weight: 100;
 }
 
 .results {
@@ -70,6 +82,7 @@ button {
 
 .results ol li {
   padding: 3px;
+  font-weight: bold;
 }
 
 
