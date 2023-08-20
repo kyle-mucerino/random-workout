@@ -1,27 +1,12 @@
 # Random Workout
 
-## Available Scripts
+## App View
+<img width="808" alt="RWSS" src="https://github.com/kyle-mucerino/random-workout/assets/124935227/ca4e3fca-aba9-4a38-9986-a060c8418d25">
 
-In the project directory, you can run:
 
-### `npm start`
+### `Functionality`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sometimes you want to go to the gym but just aren't sure what exercises to do and that can be intimidating. This workout generator allows a user to select a body part and difficulty level and gives them a list of exercises they can do. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
+## Contributors
+Kyle Mucerino
