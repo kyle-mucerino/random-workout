@@ -76,7 +76,8 @@ button {
 @media screen and (max-width: 400px) {
   .app-container,
   .results {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Reduce padding for smaller screens */
   }
 
   input, button {
