@@ -1,7 +1,7 @@
 # Random Workout
 
 ## App View
-<img width="808" alt="RWSS" src="https://github.com/kyle-mucerino/random-workout/assets/124935227/ca4e3fca-aba9-4a38-9986-a060c8418d25">
+<img width="808" alt="RWSS" src="<img width="788" alt="Screenshot 2023-08-20 at 4 30 20 PM" src="https://github.com/kyle-mucerino/random-workout/assets/124935227/c14228b6-3272-492e-8685-e92f10f3fb72">">
 
 
 ### `Functionality`
