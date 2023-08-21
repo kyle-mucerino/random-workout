@@ -65,7 +65,7 @@ select {
   display: flex;
   flex-direction: column; /* Stack child elements vertically */
   align-items: center; /* Center child elements horizontally */
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 20px; /* Increase padding for better spacing */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
@@ -90,10 +90,10 @@ select {
   .app-container,
   .results {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Reduce padding for smaller screens */
+    background-color: rgba(255, 255, 255, 0.3); /* Reduce padding for smaller screens */
   }
 
   input, button {
-    font-size: 12px; /* Decrease font size for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
   }
 }
