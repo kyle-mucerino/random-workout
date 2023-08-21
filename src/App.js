@@ -48,8 +48,13 @@ function App() {
         }
       );
 
-      setExercises(response.data);
-      setLoading(false);
+      if (response.data.length === 0) {
+        setError("Working on it! Choose another difficulty for some exercises!");
+      } else {        
+        setExercises(response.data);
+      }
+
+        setLoading(false);
     } catch (err) {
       setLoading(false);
       setError("An error occurred while fetching exercises.");
